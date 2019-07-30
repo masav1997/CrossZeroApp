@@ -1,0 +1,203 @@
+div {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("src/bg.png");
+}
+
+.field {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid black 5px;
+    width: 610px;
+}
+
+.cell.x:after {
+    content: '✕';
+    color: red;
+    font-size: 140px;
+    position: absolute;
+    width: 194px;
+    height: 194px;
+    line-height: 194px;
+    text-align: center;
+}
+
+.cell.o:after {
+    font-weight: bold;
+    color: blue;
+    content: '◯';
+    font-size: 140px;
+    position: absolute;
+    width: 194px;
+    height: 194px;
+    line-height: 200px;
+    text-align: center;
+}
+
+
+
+.row {
+    height: 200px;
+}
+
+.cell {
+    display: inline-block;
+    border: solid black 2px;
+    width: 200px;
+    height: 200px;
+}
+
+.winner-message {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: helvetica neue, helvetica, sans-serif;
+    text-align: center;
+    letter-spacing: 0.025em;
+    opacity: 0.75;
+}
+
+*,*:before,*:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+b {
+    position: relative;
+    display: block;
+    font-family: helvetica neue, helvetica, sans-serif;
+    line-height: 1.15em;
+    margin-top: -1.15em;
+    top: 2.3em;
+    font-size: 0.67em;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    opacity: 0.75;
+    text-align: center;
+}
+
+b span {
+    font-size: 0.785em;
+    font-weight: 400;
+    opacity: 0.4;
+}
+
+#intro {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.startNewGame {
+    text-decoration: none;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.startNewGame .bottom {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    display: block;
+    -webkit-transition: all .15s ease-out;
+    -moz-transition: all .15s ease-out;
+    -o-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+}
+
+.startNewGame .top {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 24px 34px 22px 34px;
+    border: 2px solid black;
+}
+
+.startNewGame-dark .top {
+    border: 2px solid #fff;
+}
+
+.startNewGame .top .label {
+    font-family: sans-serif;
+    font-weight: 600;
+    color: black;
+    font-size: 12px;
+    line-height: 110%;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all .15s ease-out;
+    -moz-transition: all .15s ease-out;
+    -o-transition: all .15s ease-out;
+    transition: all .15s ease-out;
+}
+
+.startNewGame-dark .top .label {
+    color: #fff;
+}
+
+.startNewGame:hover .bottom {
+    left: 0;
+    top: 0;
+    background-color: #f3f3f3;
+}
+
+.startNewGame:hover .top .label {
+    color: black;
+}
+
+.startNewGame-border {
+    position: absolute;
+    background-color: black;
+    -webkit-transition: all .25s ease-out;
+    -moz-transition: all .25s ease-out;
+    -o-transition: all .25s ease-out;
+    transition: all .25s ease-out;
+}
+
+.startNewGame:hover .top .button-border-left,.button:hover .top .button-border-right {
+    height: calc(100% + 2px);
+}
+
+.startNewGame:hover .top .button-border-top,.button:hover .top .button-border-bottom {
+    width: calc(100% + 2px);
+}
+
+.startNewGame-border-left {
+    left: -2px;
+    bottom: -2px;
+    width: 2px;
+    height: 0;
+}
+
+.button-border-top {
+    left: -2px;
+    top: -2px;
+    width: 0;
+    height: 2px;
+}
+
+.button-border-right {
+    right: -2px;
+    top: -2px;
+    width: 2px;
+    height: 0;
+}
+
+.button-border-bottom {
+    right: -2px;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+}
