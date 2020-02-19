@@ -17,4 +17,4 @@ To see the project is enough only:
 
 ## Author of the work
 
-* ** Anna Maslova ** - [masav1997] (https://github.com/masav1997)
+* **Anna Maslova** - <https://ylink.me/masav1997>
