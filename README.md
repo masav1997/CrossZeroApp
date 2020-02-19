@@ -4,6 +4,8 @@ Tic-tac-toe Game is a puzzle game for two players.
 
 ## Description.
 
+<img src="https://i.ibb.co/rt0F7Kv/2020-02-20-00-19-01.png" width="50%" height="50%">
+
 Tic-tac-toe (American English), noughts and crosses (British English), or Xs and Os is a paper-and-pencil game for two players, X and O, who take turns marking the spaces in a 3×3 grid. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game.
 
 ### Installation
